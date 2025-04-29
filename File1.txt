@@ -1,10 +1,8 @@
 This is line1
-
 This is line4
 This is line5
 This is line6
 This is line7
-
-[Dthis is line8
+this is line8
 This is line9
 Thisi is line10
