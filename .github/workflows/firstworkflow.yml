@@ -1,1 +1,16 @@
+name: First Workflow
 
+on: push
+
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo 'Build stage'
+ test:
+  runs-on: windows-latest
+  steps:
+   - run: echo 'test stage'
+   
+  
