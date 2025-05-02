@@ -2,19 +2,18 @@ name: First Workflow
 
 on:
  push:
-  branches:
-   - master
-
+  
 
 jobs:
  build:
   runs-on: ubuntu-latest
   steps:
-   - run: echo 'Build stage'
- test:
-  needs: build
-  runs-on: windows-latest
-  steps:
-   - run: echo 'test stage'
+   - name: Setup Java JDK
+     uses: actions/setup-java@v3.14.1 
+     with:
+      java-version: '17'
+      distribution: 'microsoft'
+      
+  
    
   
